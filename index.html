@@ -4,11 +4,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Retro</title>
+    <!-- tailwind css and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome     -->
+    <script src="https://kit.fontawesome.com/45a32aeb4a.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="max-w-6xl mx-auto">
+    <header>
+        <!-- navbar start here -->
+        <nav>
+            <div class="flex justify-between items-center py-2">
+                <div>
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="flex items-center gap-4">
 
+
+                    <div class="tooltip tooltip-bottom bg-[#12132D08] rounded-full text-xl py-2 px-3 border border-[#12132D1A]"
+                        data-tip="Home">
+                        <button><i class="fa-solid fa-house"></i></button>
+                    </div>
+                    <div class="tooltip tooltip-bottom bg-[#12132D08] rounded-full text-xl py-2 px-3 border border-[#12132D1A]"
+                        data-tip="Edit">
+                        <button><i class="fa-solid fa-pen"></i></button>
+                    </div>
+                    <div class="tooltip tooltip-bottom bg-[#12132D08] rounded-full text-xl py-2 px-3 border border-[#12132D1A]"
+                        data-tip="Contact">
+                        <button><i class="fa-solid fa-address-book"></i></button>
+                    </div>
+                    <div class="tooltip tooltip-bottom bg-[#12132D08] rounded-full text-xl py-2 px-3 border border-[#12132D1A]"
+                        data-tip="Flag">
+                        <button><i class="fa-regular fa-flag"></i></button>
+                    </div>
+                    <button class="bg-blue-400 text-white text-base rounded-full py-3 px-6">Sign In</button>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section start -->
+        <section class="bg-[url(images/bgbanner.png)] bg-no-repeat bg-black rounded-xl my-12">
+            <div class="flex justify-between py-10 px-12">
+                <div class="flex flex-col gap-5">
+                    <h1 class="text-white text-6xl font-bold">Welcome to the <br> <span
+                            class="text-blue-400">ReTro</span>
+                        Forum</h1>
+                    <p class="text-white text-base">Share your favorite opinion and win and wp <br> forum coffee mug!
+                    </p>
+                    <div class="py-4">
+                        <label class="input input-bordered rounded-full flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Search here anything" />
+                            <span class="py-2 px-6 rounded-full badge-info text-white font-semibold my-1">Search</span>
+                        </label>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/Frame 9.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Discuss start  -->
+        <section>
+            <div class="flex flex-col items-center my-5">
+                <h1 class="text-2xl font-bold">Let’s Discuss</h1>
+                <p class="text-center text-[#12132D99] pt-3 pb-10">Yes, you can run unit tests and view the results
+                    directly
+                    within
+                    the app. The
+                    <br>integrated testing
+                    features allow for a streamlined .
+                </p>
+            </div>
+            <div class="flex gap-6 my-10">
+                <div class="flex gap-7 bg-[#F3F3F5] rounded-2xl p-8 w-[60%]">
+                    <div>
+                        <img src="images/Rectangle 4.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <div class="flex text-base font-semibold gap-5">
+                            <p># Music</p>
+                            <p>Author : Awlad Hossain</p>
+                        </div>
+                        <h1 class="text-xl font-semibold">10 Kids Unaware of Their Halloween Costume</h1>
+                        <p class="border-b-2 border-dashed pb-5 text-[#12132D99]">It’s one thing to subject yourself to
+                            ha
+                            Halloween costume
+                            mishap because, <br> hey that’s your
+                            prerogative</p>
+
+                        <div class="flex justify-between items-center">
+                            <div class="flex justify-between items-center py-2 flex-1">
+                                <div class="flex items-center gap-3">
+                                    <p><i class="fa-regular fa-file-lines text-2xl"></i></p>
+                                    <p>560</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <p><i class="fa-regular fa-eye text-2xl"></i></i></p>
+                                    <p>1,568</p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <p><i class="fa-regular fa-clock text-2xl"></i></i></p>
+                                    <p>5 min</p>
+                                </div>
+                            </div>
+                            <div class="flex-1 flex justify-end">
+                                <button class="bg-green-500 py-1 px-2 rounded-full"><i
+                                        class="fa-solid fa-envelope text-2xl"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#12132D0D] w-[40%] rounded-2xl p-6">
+                    <div class="">
+                        <div class="">
+                            <div class="flex justify-between">
+                                <h1 class="text-2xl font-semibold">Title</h1>
+                                <div class="text-xl">
+
+                                    <p class="flex items-center gap-3 text-[#12132D99]"> <span><i
+                                                class="fa-solid fa-check text-green-400"></i></span>Mark
+                                        as read
+                                        (4)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- box -->
+                        <div class="text-xl rounded-xl my-5">
+                            <div class="flex justify-between items-center bg-white p-5 rounded-xl">
+                                <div>
+                                    <p class="text-[#12132D]">10 Kids Unaware of Their <br> Halloween
+                                        Costume
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <p><i class="fa-regular fa-eye text-2xl"></i></i></p>
+                                    <p>1,568</p>
+                                </div>
+                            </div>
+                            <div class="flex justify-between items-center bg-white p-5 rounded-xl mt-5">
+                                <div>
+                                    <p class="text-[#12132D]">10 Kids Unaware of Their <br> Halloween
+                                        Costume
+                                    </p>
+                                </div>
+                                <div class="flex items-center gap-3">
+                                    <p><i class="fa-regular fa-eye text-2xl"></i></i></p>
+                                    <p>1,568</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Join Our Forum -->
+        <section>
+            <div class="bg-[#12132D] flex justify-between px-12 py-5 rounded-xl">
+                <div class="flex flex-col justify-center gap-7">
+                    <h1 class="text-white text-3xl font-bold">Join Our Forum</h1>
+                    <p class="text-[#FFFFFFCC]">Share your favorite opinion and win and wp forum coffee mug! Yes, you
+                        can <br> run unit tests and view
+                        the results directly within the app. </p>
+                    <div>
+                        <button class="bg-blue-500 text-base font-semibold text-white px-8 py-3 rounded-full">Registered
+                            Now</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/joinforum.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Posts -->
+        <section class="mt-20">
+            <div class="flex flex-col items-center my-5">
+                <h1 class="text-2xl font-bold">Latest Posts</h1>
+                <p class="text-center text-[#12132D99] pt-3 pb-10">Yes, you can run unit tests and view the results
+                    directly
+                    within
+                    the app. The
+                    <br>integrated testing
+                    features allow for a streamlined .
+                </p>
+            </div>
+            <!-- card container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <!-- card 1 -->
+                <div class="border-2 border-gray-400 rounded-md py-6">
+                    <div>
+                        <div class="flex justify-center">
+                            <img src="images/card.png" alt="">
+                        </div>
+                        <div class="flex flex-col gap-2 my-4 ps-7 pe-4">
+                            <div class="flex items-center gap-3">
+                                <p><i class="fa-solid fa-calendar-week text-xl"></i></p>
+                                <p class="text-base font-semibold">29 January 2024</p>
+                            </div>
+                            <h1 class="text-lg font-semibold">
+                                What will a mars habitat force that impact in our daily life!!!
+                            </h1>
+                            <p>Yes, you can run unit tests and view the results directly within the app. </p>
+                        </div>
+
+                        <div class="ps-7 flex gap-8 items-center">
+                            <div>
+                                <img src="images/Ellipse 1.png" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-xl font-semibold">Cameron Williamson</h1>
+                                <p>Unknown</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+    <footer class="flex justify-center bg-[#12132D0D] py-10 my-14">
+        <div class="flex flex-col gap-4">
+            <div class="flex justify-center">
+                <img src="images/logo.png" alt="">
+            </div>
+            <p class="text-center">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                <br>
+                piece of classical
+                Latin literature from 45 BC
+            </p>
+            <div class="flex items-center justify-center gap-4">
+                <p><i class="text-2xl fa-brands fa-twitter"></i></p>
+                <p><i class="text-2xl fa-brands fa-facebook"></i></p>
+                <p><i class="text-2xl fa-brands fa-instagram"></i></p>
+                <p><i class="text-2xl fa-brands fa-github"></i></p>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 </html>
